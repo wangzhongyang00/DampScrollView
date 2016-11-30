@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wzy.dampscrollview.MainActivity">
+
+
+    <com.wzy.dampscrollview.DampView
+        android:id="@+id/dv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_pic_bg"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/bg" />
+
+            <ImageView
+                android:id="@+id/civ_user_header"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130px"
+                android:background="@mipmap/ic_launcher"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:layout_marginTop="255px"
+                android:layout_toLeftOf="@id/civ_user_header">
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/civ_user_header"
+                android:layout_centerHorizontal="true"
+                android:text="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_car_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_user_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22px"
+                android:text="测试阻尼效果" />
+
+
+        </RelativeLayout>
+    </com.wzy.dampscrollview.DampView>
+</RelativeLayout>
